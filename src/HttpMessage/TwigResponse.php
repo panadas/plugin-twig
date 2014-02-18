@@ -7,7 +7,7 @@ use Panadas\Framework\ApplicationAwareTrait;
 use Panadas\HttpMessage\HtmlResponse;
 use Panadas\HttpMessage\DataStructure\Cookies;
 use Panadas\HttpMessage\DataStructure\Headers;
-use Panadas\TwigPlugin\DataStructure\TwigResponseParams;
+use Panadas\TwigPlugin\DataStructure\TemplateParams;
 
 class TwigResponse extends HtmlResponse implements ApplicationAwareInterface
 {
@@ -20,12 +20,12 @@ class TwigResponse extends HtmlResponse implements ApplicationAwareInterface
         $charset = null,
         Headers $headers = null,
         Cookies $cookies = null,
-        TwigResponseParams $params = null
+        TemplateParams $params = null
     ) {
         parent::__construct($headers, $content, $charset);
 
         if (null === $params) {
-            $params = new TwigResponseParams();
+            $params = new TemplateParams();
         }
 
         $this
@@ -38,7 +38,7 @@ class TwigResponse extends HtmlResponse implements ApplicationAwareInterface
         return $this->params;
     }
 
-    protected function setParams(TwigResponseParams $params)
+    protected function setParams(TemplateParams $params)
     {
         $this->params = $params;
 

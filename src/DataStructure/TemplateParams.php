@@ -3,6 +3,6 @@ namespace Panadas\TwigPlugin\DataStructure;
 
 use Panadas\DataStructure\Hash;
 
-class TwigResponseParams extends Hash
+class TemplateParams extends Hash
 {
 }
