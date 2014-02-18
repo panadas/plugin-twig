@@ -4,9 +4,9 @@ namespace Panadas\TwigPlugin\HttpMessage;
 use Panadas\Framework\Application;
 use Panadas\Framework\ApplicationAwareInterface;
 use Panadas\Framework\ApplicationAwareTrait;
-use Panadas\HttpMessageModule\HtmlResponse;
-use Panadas\HttpMessageModule\DataStructure\Cookies;
-use Panadas\HttpMessageModule\DataStructure\Headers;
+use Panadas\HttpMessage\HtmlResponse;
+use Panadas\HttpMessage\DataStructure\Cookies;
+use Panadas\HttpMessage\DataStructure\Headers;
 use Panadas\TwigPlugin\DataStructure\TwigResponseParams;
 
 class TwigResponse extends HtmlResponse implements ApplicationAwareInterface
