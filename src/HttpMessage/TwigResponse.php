@@ -17,12 +17,13 @@ class TwigResponse extends HtmlResponse implements ApplicationAwareInterface
     private $params;
 
     public function __construct(
+        Application $application,
         $charset = null,
         Headers $headers = null,
         Cookies $cookies = null,
         TemplateParams $params = null
     ) {
-        parent::__construct($headers, $content, $charset);
+        parent::__construct($charset, $headers, $cookies);
 
         if (null === $params) {
             $params = new TemplateParams();
