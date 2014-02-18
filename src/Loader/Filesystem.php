@@ -1,10 +1,10 @@
 <?php
-namespace Panadas\TwigModule\Loader;
+namespace Panadas\TwigPlugin\Loader;
 
 use Panadas\Framework\Application;
 use Panadas\Framework\ApplicationAwareInterface;
 use Panadas\Framework\ApplicationAwareTrait;
-use Panadas\TwigModule\Environment;
+use Panadas\TwigPlugin\Environment;
 
 class Filesystem extends \Twig_Loader_Filesystem implements ApplicationAwareInterface
 {

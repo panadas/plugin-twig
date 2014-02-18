@@ -1,7 +1,7 @@
 <?php
-namespace Panadas\TwigModule\DataStructure;
+namespace Panadas\TwigPlugin\DataStructure;
 
-use Panadas\DataStructure\Hash;
+use Panadas\DataStructureModule\Hash;
 
 class TwigResponseParams extends Hash
 {

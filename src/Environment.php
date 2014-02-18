@@ -1,5 +1,5 @@
 <?php
-namespace Panadas\TwigModule;
+namespace Panadas\TwigPlugin;
 
 use Panadas\Framework\Application;
 use Panadas\Framework\ApplicationAwareInterface;
